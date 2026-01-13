@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    cursor: none !important;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: rgba(6, 182, 212, 0.3);
+    color: white;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #06b6d4, #fb923c);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #0891b2, #f97316);
+  }
+}
+
+@layer utilities {
+  .transition-1000 {
+    transition-duration: 1000ms;
+  }
+
+  .transition-1500 {
+    transition-duration: 1500ms;
+  }
+
+  .delay-100 {
+    transition-delay: 100ms;
+  }
+
+  .delay-200 {
+    transition-delay: 200ms;
+  }
+
+  .delay-300 {
+    transition-delay: 300ms;
+  }
+
+  .delay-400 {
+    transition-delay: 400ms;
+  }
+
+  .delay-500 {
+    transition-delay: 500ms;
+  }
+
+  .delay-600 {
+    transition-delay: 600ms;
+  }
+
+  .delay-700 {
+    transition-delay: 700ms;
+  }
+}
