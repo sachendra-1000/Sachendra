@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Sparkles, Code, Camera, Video, ArrowRight, Mail } from 'lucide-react';
-import myImage from '../assets/my.jpg'; // 👈 make sure file is at src/assets/my.jpg
+import myImage from '../assets/my.jpg';
+import CV from "../assets/CV-sachendra.pdf"; // 👈 make sure file is at src/assets/my.jpg
 
 export default function Hero() {
   const [scrollY, setScrollY] = useState(0);
@@ -58,9 +59,8 @@ export default function Hero() {
         style={{ transform: `translateY(${Math.min(scrollY * 0.2, 40)}px)` }}
       >
         <div
-          className={`transition-all duration-1000 ease-out ${
-            mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-          }`}
+          className={`transition-all duration-1000 ease-out ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+            }`}
         >
           <div className="grid items-center gap-10 lg:gap-16 lg:grid-cols-2">
             {/* Left: Text */}
@@ -119,15 +119,23 @@ export default function Hero() {
 
               {/* Call to actions */}
               <div className="mt-12 flex flex-wrap items-center gap-4">
-                <button className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-500 px-6 py-2.5 text-sm font-medium text-slate-950 shadow-[0_0_40px_rgba(56,189,248,0.4)] transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_55px_rgba(56,189,248,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
+                {/* Download CV button */}
+                <a
+                  href={CV}            // file in /public
+                  download="mycv.pdf"         // optional: filename for download
+                  className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-500 px-6 py-2.5 text-sm font-medium text-slate-950 shadow-[0_0_40px_rgba(56,189,248,0.4)] transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_55px_rgba(56,189,248,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+                >
                   View Portfolio
                   <ArrowRight className="h-4 w-4" />
-                </button>
+                </a>
 
-                <button className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-5 py-2.5 text-sm font-medium text-slate-100 backdrop-blur-md transition-all duration-300 hover:border-cyan-300/60 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
-                  <Mail className="h-4 w-4 text-cyan-300" />
-                  Let&apos;s Connect
-                </button>
+                <a href="shresthasachendra8@gmail.com" target="_blank" rel="noopener noreferrer">
+                  <button className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-5 py-2.5 text-sm font-medium text-slate-100 backdrop-blur-md transition-all duration-300 hover:border-cyan-300/60 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
+                    <Mail className="h-4 w-4 text-cyan-300" />
+                    Let's Connect
+                  </button>
+                </a>
+
 
                 <span className="ml-1 text-xs text-slate-400">
                   Currently <span className="text-cyan-300">available</span> for freelance projects.
