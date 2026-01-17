@@ -7,7 +7,6 @@ import Contact from './components/Contact';
 import MouseFollower from './components/MouseFollower';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';   // ✅ Capitalized import
-
 function App() {
   const [scrollProgress, setScrollProgress] = useState(0);
 
