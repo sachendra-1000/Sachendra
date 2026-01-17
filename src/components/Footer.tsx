@@ -15,22 +15,22 @@ export default function Footer() {
     {
       icon: Mail,
       label: 'Email',
-      href: 'mailto:shresthasachendra8@gmail.com', // ✅ opens email client
+      href: 'mailto:shresthasachendra8@gmail.com',
     },
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com/sachendra-1000',   // ✅ opens GitHub
+      href: 'https://github.com/sachendra-1000',
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: '#',
+      href: '', // 👈 Fixed: Empty string instead of '#' prevents build errors
     },
     {
       icon: Twitter,
       label: 'Twitter/X',
-      href: '#',
+      href: '', // 👈 Fixed: Empty string instead of '#'
     },
   ];
 
@@ -85,10 +85,12 @@ export default function Footer() {
               {socials.map((social) => (
                 <a
                   key={social.label}
-                  href={social.href}
+                  href={social.href || undefined} // Only adds href if it's not empty
                   target={social.href.startsWith('http') ? '_blank' : undefined}
                   rel={social.href.startsWith('http') ? 'noreferrer' : undefined}
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-slate-100 transition-all duration-200 hover:-translate-y-0.5 hover:border-cyan-400/70 hover:bg-white/10"
+                  className={`flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-slate-100 transition-all duration-200 ${
+                    social.href ? 'hover:-translate-y-0.5 hover:border-cyan-400/70 hover:bg-white/10 cursor-pointer' : 'cursor-default opacity-50'
+                  }`}
                   aria-label={social.label}
                 >
                   <social.icon className="h-4 w-4 text-cyan-300" />
