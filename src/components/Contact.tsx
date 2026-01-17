@@ -263,13 +263,8 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Footer note */}
-        <div className="mt-4 flex justify-center">
-          <div className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-5 py-3 text-[0.75rem] text-slate-400 backdrop-blur-xl">
-            Crafted with vision by{' '}
-            <span className="mx-1 font-medium text-cyan-300">Sachendra Shrestha</span> · 2024
-          </div>
-        </div>
+
+       
       </div>
     </section>
   );
