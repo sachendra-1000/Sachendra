@@ -31,7 +31,7 @@ export default function Creations() {
     description: 'A modern tourism platform developed to promote Nepal\'s natural beauty, cultural heritage, trekking destinations, hotels, tour packages, transportation services, and local experiences.',
     year: '2024',
     image: nextgenImg,
-    link: '#',
+    link: 'https://explore-nepal-oyb7.vercel.app/',
     features: [
       'Destination Explorer',
       'Hotel Booking',
