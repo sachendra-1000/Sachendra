@@ -25,12 +25,12 @@ export default function Footer() {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: '', // 👈 Fixed: Empty string instead of '#' prevents build errors
+      href: '',
     },
     {
       icon: Twitter,
       label: 'Twitter/X',
-      href: '', // 👈 Fixed: Empty string instead of '#'
+      href: '',
     },
   ];
 
@@ -53,15 +53,15 @@ export default function Footer() {
           <div className="max-w-md space-y-3">
             <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[0.7rem] uppercase tracking-[0.22em] text-slate-300">
               <span className="h-1.5 w-1.5 rounded-full bg-cyan-400" />
-              NextGen · Digital Studio
+              Full Stack Developer
             </div>
 
             <h3 className="text-lg font-semibold text-white">
-              Built by Sachendra Shrestha · Founder of NextGen
+              Sachendra Shrestha
             </h3>
             <p className="text-sm text-slate-400">
-              Modern websites, apps, and digital experiences focused on performance,
-              clean design, and real business impact.
+              Full Stack Web Developer specializing in Next.js, React.js, PHP, and modern web technologies.
+              Building tourism platforms, business websites, eCommerce apps, and AI-powered solutions.
             </p>
           </div>
 
@@ -85,7 +85,7 @@ export default function Footer() {
               {socials.map((social) => (
                 <a
                   key={social.label}
-                  href={social.href || undefined} // Only adds href if it's not empty
+                  href={social.href || undefined}
                   target={social.href.startsWith('http') ? '_blank' : undefined}
                   rel={social.href.startsWith('http') ? 'noreferrer' : undefined}
                   className={`flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-slate-100 transition-all duration-200 ${
@@ -102,7 +102,7 @@ export default function Footer() {
 
         {/* Bottom row */}
         <div className="flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-4 text-[0.75rem] text-slate-500 md:flex-row">
-          <p>© {year} NextGen · All rights reserved.</p>
+          <p>© {year} Sachendra Shrestha · All rights reserved.</p>
 
           <button
             type="button"

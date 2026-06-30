@@ -1,48 +1,48 @@
 import { useEffect, useState, useRef } from 'react';
-import { Zap, Palette, Layers, Globe, Database, Smartphone } from 'lucide-react';
+import { Code2, Globe, Database, Palette, Server, GitBranch } from 'lucide-react';
 
 const skills = [
   {
-    icon: Palette,
-    name: 'UI/UX Design',
-    level: 95,
+    icon: Code2,
+    name: 'Next.js',
+    level: 92,
+    color: 'from-cyan-500 to-cyan-300',
+    description: 'Server-side rendering, API routes, and App Router.',
+  },
+  {
+    icon: Code2,
+    name: 'React.js',
+    level: 90,
     color: 'from-orange-500 to-orange-300',
-    description: 'Crafting intuitive, human-centered interfaces.',
+    description: 'Component architecture, hooks, and state management.',
   },
   {
     icon: Globe,
-    name: 'Web Development',
-    level: 92,
-    color: 'from-cyan-500 to-cyan-300',
-    description: 'Building fast, responsive web experiences.',
-  },
-  {
-    icon: Smartphone,
-    name: 'App Development',
+    name: 'JavaScript',
     level: 88,
     color: 'from-teal-500 to-teal-300',
-    description: 'Designing mobile-first digital products.',
+    description: 'ES6+, async/await, DOM manipulation, and APIs.',
   },
   {
-    icon: Layers,
-    name: 'Motion Design',
-    level: 85,
+    icon: Palette,
+    name: 'HTML5 & CSS3',
+    level: 95,
     color: 'from-orange-400 to-orange-200',
-    description: 'Using motion to guide and delight users.',
+    description: 'Semantic markup, Flexbox, Grid, and responsive design.',
+  },
+  {
+    icon: Server,
+    name: 'PHP & Backend',
+    level: 82,
+    color: 'from-cyan-600 to-cyan-400',
+    description: 'Server-side logic, REST APIs, and form handling.',
   },
   {
     icon: Database,
-    name: 'Backend Systems',
-    level: 80,
-    color: 'from-cyan-600 to-cyan-400',
-    description: 'Designing robust, scalable architectures.',
-  },
-  {
-    icon: Zap,
-    name: 'Creative Direction',
-    level: 90,
+    name: 'Firebase & MongoDB',
+    level: 85,
     color: 'from-orange-300 to-cyan-300',
-    description: 'Aligning vision, strategy, and execution.',
+    description: 'NoSQL databases, authentication, and real-time data.',
   },
 ];
 
@@ -55,7 +55,6 @@ export default function DigitalDNA() {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          // Trigger only once
           observer.disconnect();
         }
       },
@@ -73,7 +72,7 @@ export default function DigitalDNA() {
     <section
       id="dna"
       ref={sectionRef}
-      aria-label="My digital skillset"
+      aria-label="My technical skillset"
       className="relative min-h-screen flex items-center justify-center py-24 md:py-32 px-6 overflow-hidden"
     >
       {/* Background gradient */}
@@ -110,7 +109,7 @@ export default function DigitalDNA() {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
             }`}
           >
-            A blend of design, code, and strategy — constantly evolving to create
+            A blend of frontend, backend, and database skills — constantly evolving to create
             meaningful digital experiences.
           </p>
 

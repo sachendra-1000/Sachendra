@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Sparkles, Code, Camera, Video, ArrowRight, Mail } from 'lucide-react';
+import { Sparkles, Code, Globe, Cpu, ArrowRight, Mail } from 'lucide-react';
 import myImage from '../assets/my.jpg';
-import CV from "../assets/CV-sachendra.pdf"; // 👈 make sure file is at src/assets/my.jpg
+import CV from "../assets/CV-sachendra.pdf";
 
 export default function Hero() {
   const [scrollY, setScrollY] = useState(0);
@@ -15,10 +15,10 @@ export default function Hero() {
   }, []);
 
   const roles = [
-    { icon: Code, text: 'Web Designer' },
-    { icon: Sparkles, text: 'App Developer' },
-    { icon: Camera, text: 'Photographer' },
-    { icon: Video, text: 'Videographer' },
+    { icon: Code, text: 'Full Stack Developer' },
+    { icon: Globe, text: 'UI/UX Designer' },
+    { icon: Cpu, text: 'Next.js Developer' },
+    { icon: Sparkles, text: 'Web App Builder' },
   ];
 
   return (
@@ -69,7 +69,7 @@ export default function Hero() {
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1 backdrop-blur-sm">
                 <Sparkles className="h-3.5 w-3.5 text-cyan-400" />
                 <span className="text-[0.7rem] md:text-xs font-medium tracking-[0.25em] text-cyan-300">
-                  DIGITAL CREATOR
+                  FULL STACK DEVELOPER
                 </span>
               </div>
 
@@ -86,9 +86,10 @@ export default function Hero() {
 
               {/* Description */}
               <p className="mt-6 max-w-xl text-sm md:text-base text-slate-300">
-                I design and develop modern web experiences, craft mobile‑ready interfaces,
-                and tell visual stories through photography and video. Clean aesthetics,
-                smooth interactions, and user‑first experiences are my priority.
+                I am a passionate Full Stack Web Developer who builds modern, fast, and user-friendly
+                web applications. I specialize in creating tourism platforms, business websites,
+                eCommerce applications, and AI-powered solutions using Next.js, React.js, PHP,
+                Firebase, MongoDB, HTML, CSS, and JavaScript.
               </p>
 
               {/* Roles */}
@@ -119,23 +120,21 @@ export default function Hero() {
 
               {/* Call to actions */}
               <div className="mt-12 flex flex-wrap items-center gap-4">
-                {/* Download CV button */}
                 <a
-                  href={CV}            // file in /public
-                  download="mycv.pdf"         // optional: filename for download
+                  href={CV}
+                  download="Sachendra-Shrestha-CV.pdf"
                   className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-500 px-6 py-2.5 text-sm font-medium text-slate-950 shadow-[0_0_40px_rgba(56,189,248,0.4)] transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_55px_rgba(56,189,248,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
                 >
-                  View Portfolio
+                  Download CV
                   <ArrowRight className="h-4 w-4" />
                 </a>
 
-                <a href="shresthasachendra8@gmail.com" target="_blank" rel="noopener noreferrer">
+                <a href="mailto:shresthasachendra8@gmail.com">
                   <button className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-5 py-2.5 text-sm font-medium text-slate-100 backdrop-blur-md transition-all duration-300 hover:border-cyan-300/60 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
                     <Mail className="h-4 w-4 text-cyan-300" />
                     Let's Connect
                   </button>
                 </a>
-
 
                 <span className="ml-1 text-xs text-slate-400">
                   Currently <span className="text-cyan-300">available</span> for freelance projects.
@@ -161,7 +160,7 @@ export default function Hero() {
                   <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-slate-100">
                     <div>
                       <p className="font-semibold">Sachendra Shrestha</p>
-                      <p className="text-[0.7rem] text-slate-300">Founder · NextGen</p>
+                      <p className="text-[0.7rem] text-slate-300">Full Stack Developer</p>
                     </div>
                     <div className="rounded-full border border-white/20 bg-black/60 px-3 py-1 text-[0.65rem] uppercase tracking-[0.18em] text-cyan-300">
                       Available

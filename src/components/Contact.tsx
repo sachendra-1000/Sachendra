@@ -62,7 +62,6 @@ export default function Contact() {
     {
       icon: MessageCircle,
       label: 'Viber',
-      // replace with your real number, e.g. viber://chat?number=+97798xxxxxxx
       href: 'viber://chat?number=9761907107',
     },
   ];
@@ -112,13 +111,14 @@ export default function Contact() {
             </span>
             <br />
             <span className="bg-gradient-to-r from-orange-400 via-cyan-400 to-orange-400 bg-clip-text text-transparent">
-              Something Unreal
+              Something Great
             </span>
           </h2>
 
           <p className="mx-auto max-w-2xl text-sm md:text-base text-slate-300">
-            Share your idea, product, or challenge—whether it&apos;s a fresh launch or a redesign.
-            I&apos;ll get back to you with honest thoughts and clear next steps.
+            Share your idea, project, or challenge — whether it&apos;s a tourism platform,
+            business website, eCommerce app, or something entirely new. I&apos;ll get back to you
+            with honest thoughts and clear next steps.
           </p>
         </div>
 
@@ -187,7 +187,7 @@ export default function Contact() {
                     <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-sky-400 to-orange-400 opacity-100 transition-opacity duration-300 group-hover:opacity-80" />
                     <div className="absolute inset-0 bg-gradient-to-r from-orange-400 via-amber-400 to-cyan-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                     <span className="relative z-10 tracking-[0.15em] uppercase">
-                      Launch Mission
+                      Send Message
                     </span>
                     <Send className="relative z-10 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-0.5" />
                   </button>
@@ -253,8 +253,8 @@ export default function Contact() {
                 </span>
               </div>
               <p className="mb-3 text-sm text-slate-300">
-                Currently accepting collaborations for 2024, with a focus on digital products,
-                immersive web experiences, and creative launches.
+                Currently accepting collaborations for web development, tourism platforms,
+                business websites, eCommerce applications, and AI-powered solutions.
               </p>
               <p className="text-xs text-slate-400">
                 Based remotely · Comfortable across time zones · English & Nepali.
@@ -262,9 +262,6 @@ export default function Contact() {
             </div>
           </div>
         </div>
-
-
-       
       </div>
     </section>
   );

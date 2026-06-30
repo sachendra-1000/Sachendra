@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { User, Rocket, Code2, Building2 } from 'lucide-react';
+import { User, Target, Code2, Briefcase } from 'lucide-react';
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(false);
@@ -18,13 +18,19 @@ export default function About() {
   }, []);
 
   const stack = [
-    'HTML',
-    'CSS',
-    'Bootstrap',
-    'React.js',
     'Next.js',
+    'React.js',
+    'JavaScript',
+    'HTML5',
+    'CSS3',
+    'Bootstrap',
+    'Tailwind CSS',
     'PHP',
+    'Firebase',
+    'MongoDB',
+    'MySQL',
     'Figma',
+    'Git & GitHub',
   ];
 
   return (
@@ -51,47 +57,40 @@ export default function About() {
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1 backdrop-blur-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-cyan-400" />
             <span className="text-[0.7rem] font-medium tracking-[0.25em] text-slate-300">
-              FOUNDER · NEXTGEN
+              ABOUT ME
             </span>
           </div>
 
           <h2 className="text-balance text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
             <span className="bg-gradient-to-r from-white via-cyan-200 to-white bg-clip-text text-transparent">
-              About Sachendra
+              About
             </span>
             <br />
             <span className="bg-gradient-to-r from-orange-400 via-cyan-400 to-orange-300 bg-clip-text text-transparent">
-              &amp; NextGen
+              Sachendra
             </span>
           </h2>
 
           <div className="space-y-4 text-sm md:text-base text-slate-200">
             <p>
-              My name is <span className="font-semibold text-cyan-300">Sachendra Shrestha</span>, and I am the Founder of{' '}
-              <span className="font-semibold text-orange-300">NextGen</span>. I am a passionate Web Developer, App Developer,
-              and Digital Creator with a strong vision to help businesses grow through modern technology and smart digital
-              solutions.
+              My name is <span className="font-semibold text-cyan-300">Sachendra Shrestha</span>,
+              a passionate Full Stack Web Developer who builds modern, fast, and user-friendly web applications.
             </p>
 
             <p>
-              At NextGen, my goal is to deliver high-quality, secure, and user-friendly digital products that meet real
-              business needs. I specialize in building professional websites, web applications, and admin panels, focusing on
-              performance, responsiveness, and clean design.
+              I specialize in creating tourism platforms, business websites, eCommerce applications,
+              and AI-powered solutions using Next.js, React.js, PHP, Firebase, MongoDB, HTML, CSS, and JavaScript.
             </p>
 
             <p>
-              With skills in <span className="font-medium">HTML, CSS, Bootstrap, React.js, Next.js, PHP, and Figma</span>, I lead
-              projects from concept to completion while ensuring client satisfaction and long-term scalability.
+              I enjoy designing and developing responsive websites with a strong focus on performance,
+              usability, and user experience. I continuously learn new technologies and enjoy turning
+              ideas into professional web applications.
             </p>
 
             <p>
-              I strongly believe in innovation, continuous learning, and creating solutions that stand out in today’s
-              competitive digital world.
-            </p>
-
-            <p>
-              As the founder, I am committed to building NextGen as a trusted technology partner, providing reliable services,
-              transparent communication, and future-ready solutions for individuals and businesses.
+              My goal is to create innovative digital experiences that solve real-world problems
+              through clean design and efficient development.
             </p>
           </div>
         </div>
@@ -103,24 +102,24 @@ export default function About() {
           }`}
           style={{ transitionDelay: '200ms' }}
         >
-          {/* Card: Mission */}
+          {/* Card: Goal */}
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-7 backdrop-blur-xl">
             <div className="mb-4 flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-500/20 to-orange-500/20">
-                <Rocket className="h-5 w-5 text-cyan-300" />
+                <Target className="h-5 w-5 text-cyan-300" />
               </div>
               <div>
                 <p className="text-[0.7rem] uppercase tracking-[0.22em] text-slate-400">
-                  MISSION
+                  GOAL
                 </p>
                 <p className="text-sm font-medium text-slate-100">
-                  Growth through smart digital solutions
+                  Innovative digital experiences
                 </p>
               </div>
             </div>
             <p className="text-xs md:text-sm text-slate-300">
-              NextGen is built to help businesses transform their ideas into modern, scalable digital products—without
-              compromising on quality, security, or user experience.
+              To create modern, scalable web applications that solve real-world problems
+              through clean design and efficient development.
             </p>
           </div>
 
@@ -151,27 +150,27 @@ export default function About() {
             </div>
           </div>
 
-          {/* Card: NextGen as a partner */}
+          {/* Card: Experience */}
           <div className="rounded-3xl border border-cyan-400/30 bg-gradient-to-br from-cyan-500/12 via-slate-900/70 to-orange-500/12 p-6 md:p-7 backdrop-blur-xl">
             <div className="mb-4 flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500/20 to-cyan-500/20">
-                <Building2 className="h-5 w-5 text-orange-300" />
+                <Briefcase className="h-5 w-5 text-orange-300" />
               </div>
               <div>
                 <p className="text-[0.7rem] uppercase tracking-[0.22em] text-slate-400">
-                  NEXTGEN
+                  EXPERIENCE
                 </p>
                 <p className="text-sm font-medium text-slate-100">
-                  Your trusted technology partner
+                  Freelance Full Stack Developer
                 </p>
               </div>
             </div>
             <p className="mb-3 text-xs md:text-sm text-slate-300">
-              Reliable services, transparent communication, and future-ready solutions—designed for both individuals and
-              businesses.
+              Designing and developing modern websites and web applications for businesses,
+              tourism, education, and eCommerce with responsive design, clean code, and scalable architecture.
             </p>
             <p className="text-[0.7rem] uppercase tracking-[0.22em] text-cyan-300">
-              PERFORMANCE · SECURITY · CLEAN DESIGN
+              PERFORMANCE · USABILITY · CLEAN DESIGN
             </p>
           </div>
         </div>

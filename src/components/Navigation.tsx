@@ -24,10 +24,10 @@ export default function Navigation() {
       }`}
     >
       <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-full px-6 py-3 flex gap-6">
-        {['DNA', 'Creations', 'Connect'].map((item) => (
+        {['About', 'DNA', 'Creations', 'Connect'].map((item) => (
           <button
             key={item}
-            onClick={() => scrollToSection(item.toLowerCase())}
+            onClick={() => scrollToSection(item.toLowerCase() === 'about' ? 'about' : item.toLowerCase())}
             className="text-sm font-light tracking-wider hover:text-cyan-400 transition-colors duration-300 relative group"
           >
             {item}
